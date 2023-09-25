@@ -148,15 +148,33 @@ def open_door (string1, string2)
             File.readlines('celebration.txt') do |line|
                 line
             end
+            
         end
+    elsif (string1 == "ENTER" && string2 == 3) 
+        puts "To open the door, you need to solve this equation"
+        #pemdas format
+        puts "Every def has a...??"
+        answer = gets.chomp.upcase 
+        if (answer == "END")
+            puts "You have unlocked the door!"
+            File.readlines('spider.txt') do |line|
+                line
+            end
+                puts "You find a katanna leaned against the wall"
+                puts "Are you up for the challenge to fight the mighty spider?!?!"
+                user_answer = gets.chomp
+                if (user_answer == "yes")
+                    puts "Grab the sword and fight for your life!" 
+                elsif 
+                    puts "Game over you lose!"
+                    File.readlines('gameover.txt') do |line|
+                        line
+                    end
+            end
+        elsif 
+            "You are locked, go check slack and try again!"
 
-        
-
-        
-        
-        
-
-
+        end #end of troll conditional     
     end
 end
 puts open_door(pumpkin_choice, user_avatar)
