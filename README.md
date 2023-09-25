@@ -27,6 +27,41 @@ Text-based games, or interactive fiction games, are one of the earliest styles o
 
 ### Planning
 
+FALL THEMED MAZE:
+pumpkins, scarecrows, ghosts, leaves, ravens, zombies...
+1. WELCOME to the Fall maze of horrors!
+
+CHOOSE YOUR CHARACTER!
+
+2. character options: 🎃 👻 🧌
+(emojis in buttons)
+
+3. ARE YOU READY TO ENTER THE MAZE?
+(YES...come in! or NO...leave, foo!)
+
+(dark hall...to enter) 
+
+
+4. Characters will have their own powers...(each character has their own story...)
+pumpkin: candle lit...
+ghost: can go through walls...(YOU'VE CHOSEN THE GHOST and *enter visual of a wall)
+troll: in the trench...he breaks things, attacks wolves...
+
+(pick this or pick that BUTTONS) - certain options open new doors...
+
+5. user will have different door options...descriptions - left goes to "you're doomed" - right goes to "..."
+
+-spiders...DO YOU WANT TO FIGHT THE SPIDER? (yes/no)...(spider bites and you die or spider sword drops and you gain a sword)
+
+-IF YOU WIN - you get to experience the 3d tunnel
+
+
+
+
+
+
+
+
 The most important part of this project is the planning phase. Work with your team to construct a story line. Think of an idea that will make your game enjoyable. Common choices are treasure hunts, day-in-the-life stories, zombie apocalypse adventures, and murder mysteries.
 
 You need to decide how your user will interact with the code that you write. Every option you present will need to be followed with an action. If you choose to create multiple storylines your code base will need to reflect all the possible actions. Each storyline can be a unique adventure where some are successful and some are not.
