@@ -58,7 +58,7 @@ def door_choice string
             end
         end
         puts door_right
-        "Since you are the 👻 you can enter this door"
+        "Since you are the 👻 this is your door!"
     elsif string == 3
         puts "In front of you there is a door, you can hear the monster behind it
         "
@@ -74,6 +74,7 @@ end
 puts door_choice user_avatar
 puts "type ENTER to open this door"
 pumpkin_choice = gets.chomp.upcase
+
 def open_door (string1, string2)
     if string1 == "ENTER" && string2 == 1
         File.readlines('doorthree.txt') do |line|
@@ -112,8 +113,50 @@ def open_door (string1, string2)
             File.readlines('treasure.txt') do |line|
                 line
             end
-        # here is the end of the pumpkin storyline 
         end
+        # here is the end of the pumpkin storyline 
+
+
+    elsif string1 == "ENTER" && string2 == 2
+        File.readlines('doortwo.txt') do |line|
+            line
+        end
+        puts "The door looks impenetrable - in order to go through you HAVE to solve a riddle..."
+        puts "If it walks like a duck, quacks like a duck, then it's a ...?"
+        ghost_answer = gets.chomp.upcase 
+        if ghost_answer == "DUCK"
+             "That's the answer!"
+             File.readlines('duck.txt') do |line|
+                line
+            end
+        else 
+            "That's incorrect, try again!"
+        
+        end
+        puts "You've entered the room of the ghost...there's a spooky table....with 2 fruits...which one do you want to pick?"
+        puts "🍎, 🍍"
+        puts "type: apple or pineapple"
+        ghost_fruit_choice = gets.chomp.upcase
+        if ghost_fruit_choice == "PINEAPPLE"
+            puts "OH NO! YOU HAVE BEEN POISONED"
+            File.readlines('gameover.txt') do |line|
+                line
+            end
+        elsif ghost_fruit_choice == "APPLE"
+            puts "GOOD CHOICE!!!"
+            puts "CONGRATS YOU ATE THE RIGHT FRUIT"
+            File.readlines('celebration.txt') do |line|
+                line
+            end
+        end
+
+        
+
+        
+        
+        
+
+
     end
 end
 puts open_door(pumpkin_choice, user_avatar)
